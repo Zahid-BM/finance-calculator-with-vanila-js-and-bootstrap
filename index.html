@@ -24,7 +24,7 @@
                         src="images/accountant-calculating-profit-with-financial-analysis-graphs.jpg" alt="">
                 </div>
                 <div class="col-md-5 align-content-center form">
-                    <table class="table table-borderless text-center">
+                    <table class="table table-borderless text-center  ">
                         <tr>
                             <thead>
                                 <th>
@@ -62,9 +62,10 @@
                         </tr>
                         <tr>
                             <td>
-                                <button class="btn btn-success w-25">Calculate</button>
+                                <button class="btn btn-success">Calculate</button>
                             </td>
                         </tr>
+
                         <tr>
                             <thead>
                                 <th>
@@ -72,32 +73,36 @@
                                 </th>
                             </thead>
                         </tr>
+                        <tr>
+                            <thead>
+                                <th>
+                                    Balance <span>00</span>
+                                </th>
+                            </thead>
+                        </tr>
+                        <tr>
+                            <td>
 
+                                Save: <input id="input-save" class=" border-0 rounded input text-center" type="text"> %
+                                <button id="btn-save" class="btn btn-success">Save</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <thead>
+                                <th>
+                                    Saving Amount <span>00</span>
+                                </th>
+                            </thead>
+                        </tr>
+                        <tr>
+                            <thead>
+                                <th>
+                                    Remaining Balance <span>00</span>
+                                </th>
+                            </thead>
+                        </tr>
                     </table>
-                    <h6 class="text-center mt-5 mb-3 fw-bold">Income</h6>
-                    <label class="label" for="">Income :</label>
-                    <input class="border-0 rounded input text-center" type="text">
-                    <br>
-                    <h6 class="text-center my-2 fw-bold">Expenses</h6>
-                    <label class="label" for="">Food :</label>
-                    <input class="border-0 input text-center" type="text">
-                    <br>
-                    <label class="label" for="">Rent :</label>
-                    <input class="border-0 input text-center" type="text">
-                    <br>
-                    <label class="label" for="">Clothes :</label>
-                    <input class="border-0 input text-center" type="text">
-
-                    <button class="btn-calculate btn btn-success mt-1 w-25">Calculate</button>
-                    <h6 class="text-center my-3 fw-bold">Total expences: <span>00</span></h6>
-                    <h6 class="text-center my-3 fw-bold">Balance: <span>00</span></h6>
-                    <label class="label" for="">Save :</label>
-                    <input id="input-save" class="border-0 input text-center" type="text">
-                    <span> % </span> <button class="btn btn-success w-25">Save</button>
-                    <h6 class="text-center my-3 fw-bold">Saving Amount: <span>00</span></h6>
-                    <h6 class="text-center my-3 fw-bold pb-3">Remaining Balance: <span>00</span></h6>
                 </div>
-
             </div>
         </section>
     </main>
