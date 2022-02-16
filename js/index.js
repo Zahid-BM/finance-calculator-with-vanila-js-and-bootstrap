@@ -26,6 +26,7 @@ document.getElementById('btn-save').addEventListener('click', function () {
     const saving = getInnerTextNumber('saving-amount');
     const savingAmount = income / save;
     // console.log(save);
-
     document.getElementById('saving-amount').innerText = savingAmount;
+    const balance = getInnerTextNumber('balance');
+    document.getElementById('remaining-balance').innerText = balance - savingAmount;
 })
