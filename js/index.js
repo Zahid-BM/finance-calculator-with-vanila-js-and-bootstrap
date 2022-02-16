@@ -18,16 +18,14 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
     const totalExpense = getInnerTextNumber('total-expenses');
     const balance = getInnerTextNumber('balance');
     document.getElementById('balance').innerText = income - totalExpense;
+    const save = getInputValue('input-save');
+})
+document.getElementById('btn-save').addEventListener('click', function () {
+    const income = getInputValue('input-income');
+    const save = getInputValue('input-save');
+    const saving = getInnerTextNumber('saving-amount');
+    const savingAmount = income / save;
+    // console.log(save);
 
-
-
-
-
-    // console.log(allCost);
-
-
-
-
-
-
+    document.getElementById('saving-amount').innerText = savingAmount;
 })
