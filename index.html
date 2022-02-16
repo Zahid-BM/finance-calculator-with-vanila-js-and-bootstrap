@@ -17,38 +17,37 @@
 <body>
     <main>
         <section class="container">
-            <h1 class="text-center text-warning ">Monthly Financial Calculation</h1>
+            <h1 class="text-center text-warning my-5">Monthly Financial Calculation</h1>
             <div class="row">
                 <div class="col-md-6">
                     <img class="w-100 " src="images/accountant-calculating-profit-with-financial-analysis-graphs.jpg"
                         alt="">
                 </div>
-                <div class="col-md-6 justify-">
-
-                    <div class="px-auto">
-                        <h4 class="text-center">Income</h4>
-                        <label  for="">Income :</label>
-                        <input type="text">
+                <div class="col-md-6 justify-content-center">
+                    <form>
+                        <h6 class="text-center my-3">Income</h6>
+                        <label class="label" for="">Income :</label>
+                        <input class="border-0 rounded input text-center" type="text">
                         <br>
-                        <h4 class="text-center">Expenses</h4>
-                        <label  for="">Food :</label>
-                        <input type="text">
+                        <h6 class="text-center my-3">Expenses</h6>
+                        <label class="label" for="">Food :</label>
+                        <input class="border-0 input text-center" type="text">
                         <br>
-                        <label  for="">Rent :</label>
-                        <input  type="text">
+                        <label class="label" for="">Rent :</label>
+                        <input class="border-0 input text-center" type="text">
                         <br>
-                        <label  for="">Clothes :</label>
-                        <input type="text">
+                        <label class="label" for="">Clothes :</label>
+                        <input class="border-0 input text-center" type="text">
                         <br>
-                        <button>Calculate</button>
-                        <h4 class="text-center">Total expences: <span>00</span></h4>
-                        <h4 class="text-center">Balance: <span>00</span></h4>
-                        <label  for="">Save :</label>
-                        <input type="text">
-                        <span> % </span> <button>Save</button>
-                        <h4 class="text-center">Saving Amount: <span>00</span></h4>
-                        <h4 class="text-center">Remaining Balance: <span>00</span></h4>
-                    </div>
+                        <button class="btn-calculate btn btn-warning mt-1 w-25">Calculate</button>
+                        <h6 class="text-center my-3">Total expences: <span>00</span></h6>
+                        <h6 class="text-center my-3">Balance: <span>00</span></h6>
+                        <label class="label" for="">Save :</label>
+                        <input id="input-save" class="border-0 input text-center" type="text">
+                        <span> % </span> <button class="btn btn-warning w-25">Save</button>
+                        <h6 class="text-center my-3">Saving Amount: <span>00</span></h6>
+                        <h6 class="text-center my-3">Remaining Balance: <span>00</span></h6>
+                    </form>
 
                 </div>
             </div>
