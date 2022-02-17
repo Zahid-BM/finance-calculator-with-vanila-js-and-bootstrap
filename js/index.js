@@ -1,6 +1,9 @@
 function getInputValue(inputIdName) {
     const getInput = document.getElementById(inputIdName);
     const inputNumber = parseFloat(getInput.value);
+    if (getInput.value < 0 || isNaN(getInput.value)) {
+        alert('Wrong input !! Please check all input field and input correctly.');
+    }
     return inputNumber;
 }
 function getInnerTextNumber(idName) {
