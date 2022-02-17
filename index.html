@@ -17,27 +17,28 @@
 
 <body>
     <main>
+        <!-- main content -->
         <section class="container">
             <!-- document heading -->
 
-            <h3 class="text-center text-secondary mt-3 mb-4 fw-bolder">Monthly Finance Summary 💰</h3>
-
+            <h3 class="text-center text-white-50 mt-3 mb-4 ">Monthly <span class="text-warning fw-bolder">
+                    Finance</span> Summary💰</h3>
             <div class="row gx-5">
                 <div class="col-md-7">
-                    <img class="w-100 h-100"
+                    <img class="w-100 h-100 rounded"
                         src="images/accountant-calculating-profit-with-financial-analysis-graphs.jpg" alt="">
                 </div>
-                <div class="col-md-5 align-content-center form">
-                    <table class="table table-borderless text-center mt-5 ">
+                <div class="col-md-5 align-content-center form rounded">
+                    <table class="table table-borderless text-center mt-5 input-table">
                         <tr>
                             <thead>
                                 <th>
-                                    Income
+                                    <span class="text-white"> Income</span>
                                 </th>
                             </thead>
                             <td>
-                                <label>Income :</label>
-                                <input id="input-income" class=" border-0 rounded input text-center" type="text">
+                                <label>Income : </label>
+                                <input id="input-income" class=" border-0 rounded input text-center ms-2" type="text">
                             </td>
 
                         </tr>
@@ -49,59 +50,69 @@
                             </thead>
                             <td>
                                 <label>Food :</label>
-                                <input id="input-food" class=" border-0 rounded input text-center" type="text">
+                                <input id="input-food" class=" border-0 rounded input text-center ms-4" type="text">
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <label>Rent :</label>
-                                <input id="input-rent" class=" border-0 rounded input text-center" type="text">
+                                <input id="input-rent" class=" border-0 rounded input text-center ms-4" type="text">
+
+
                             </td>
+
                         </tr>
                         <tr>
                             <td>
                                 <label>Clothes :</label>
-                                <input id="input-clothes" class=" border-0 rounded input text-center" type="text">
+                                <input id="input-clothes" class=" border-0 rounded input text-center ms-2" type="text">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <button id="btn-calculate" class="btn btn-success">Calculate</button>
+                                <button id="btn-calculate"
+                                    class="btn btn-info text-secondary fw-bold">Calculate</button>
                             </td>
                         </tr>
 
                         <tr>
                             <thead>
                                 <th>
-                                    Total Expenses: <span id="total-expenses">00</span>
+                                    Total Expenses: <span class="text-warning" id="total-expenses">00</span> <span
+                                        class="text-warning fw-bolder fs-6"> $</span>
                                 </th>
                             </thead>
                         </tr>
                         <tr>
                             <thead>
                                 <th>
-                                    Balance: <span id="balance">00</span>
+                                    Balance : <span class="text-warning" id="balance">00</span> <span
+                                        class="text-warning fw-bolder fs-6"> $</span>
                                 </th>
                             </thead>
                         </tr>
                         <tr>
                             <td>
 
-                                Save: <input id="input-save" class=" border-0 rounded input text-center" type="text"> %
-                                <button id="btn-save" class="btn btn-success">Save</button>
+                                Save: <input id="input-save" class=" border-0 rounded input text-center ms-2"
+                                    type="text"> %
+                                <button id="btn-save" class="btn btn-info text-secondary fw-bold">Save</button>
                             </td>
                         </tr>
                         <tr>
                             <thead>
                                 <th>
-                                    Saving Amount: <span id="saving-amount">00</span>
+                                    Saving Amount : <span class="text-warning" id="saving-amount">00</span> <span
+                                        class="text-warning fw-bolder fs-6"> $</span>
                                 </th>
                             </thead>
                         </tr>
                         <tr>
                             <thead>
                                 <th>
-                                    Remaining Balance: <span id="remaining-balance">00</span>
+                                    <span class="text-white"> Remaining Balance : </span><span class="text-warning"
+                                        id="remaining-balance">00</span> <span class="text-warning fw-bolder fs-6">
+                                        $</span>
                                 </th>
                             </thead>
                         </tr>
