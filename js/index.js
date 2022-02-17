@@ -1,10 +1,11 @@
+
 // function to get all input and convert into floating numbers
 function getInputValue(inputIdName) {
     const getInput = document.getElementById(inputIdName);
     const inputNumber = parseFloat(getInput.value);
     /* Wrong input Validation */
-    if (getInput.value < 0 || isNaN(getInput.value)) {
-        alert('Wrong input !! Please check all input field and input correctly.');
+    if ((getInput.value < 0 || isNaN(getInput.value) || getInput.value == '')) {
+        alert('Wrong input or empty field !!');
     }
     return inputNumber;
 }
@@ -23,17 +24,11 @@ document.getElementById('btn-calculate').addEventListener('click', function () {
     const allCost = food + rent + clothes;
     document.getElementById('total-expenses').innerText = allCost;
     const totalExpense = getInnerTextNumber('total-expenses');
-    const balance = getInnerTextNumber('balance');
-    /* Validation whether expenses can not exceed income */
-    if (totalExpense <= income) {
-        document.getElementById('balance').innerText = income - totalExpense;
-    }
-    else {
-        alert('Total Expenses can not be higher than your income')
-        document.getElementById('balance').innerText = 'wrong';
-        document.getElementById('total-expenses').innerText = "Too Much Expenses.";
-    }
-})
+
+    document.getElementById('balance').innerText = income - totalExpense;
+    document.getElementById('total-expenses').innerText = allCost;
+}
+)
 // Event handler for save-button. This will calculate target saving inputs, display saving amount and remaining balance 
 document.getElementById('btn-save').addEventListener('click', function () {
     const income = getInputValue('input-income');
@@ -41,13 +36,17 @@ document.getElementById('btn-save').addEventListener('click', function () {
     const savingAmount = income * save / 100;
     document.getElementById('saving-amount').innerText = savingAmount;
     const balance = getInnerTextNumber('balance');
+
     /* Validation whether saving amount can not exceed balance amount */
-    if (savingAmount < balance) {
+    if (balance >= savingAmount) {
+        document.getElementById('saving-amount').innerText = savingAmount;
         document.getElementById('remaining-balance').innerText = balance - savingAmount;
     }
     else {
-        alert('No balance to save !!!')
-        document.getElementById('saving-amount').innerText = 'No Saving';
-        document.getElementById('remaining-balance').innerText = 'No Balance';
+        alert('No enough balance to save');
+        document.getElementById('saving-amount').innerText = "00";
+        document.getElementById('remaining-balance').innerText = balance;
+
     }
-})
+}
+)
